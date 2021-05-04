@@ -25,5 +25,10 @@ setup(
     ],
     install_requires=[
         'djangorestframework',
-    ]
+    ],
+    entry_points={
+        "lms.djangoapp": [
+            "edxapi = lms.djangoapp.edxapi.apps:EdxapiConfig",
+        ],
+    }
 )
